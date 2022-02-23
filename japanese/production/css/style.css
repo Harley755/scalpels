@@ -1,0 +1,165 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#container,
+#left,
+#image_banner {
+    width: 85%;
+    margin: auto;
+}
+
+.button1,
+.button2 {
+    border: none;
+    border: 2px solid #000;
+    padding: 10px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+nav,
+select,
+.button1 input,
+.button2 input {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+nav li,
+.button1 {
+    margin-left: 40px;
+}
+
+
+/**---- LET'S GO ----**/
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+#image_banner {
+    background: url("../images/bg.jpg");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 62%;
+    height: 66vh;
+}
+
+header {
+    padding: 30px 0;
+}
+
+#container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 150px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: baseline;
+}
+
+.button1:hover {
+    background-color: #342a80;
+}
+
+.button1 input:hover {
+    color: #f1e8c0;
+    cursor: pointer;
+}
+
+select {
+    background-color: transparent;
+    border: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+}
+
+input[type="button"] {
+    background-color: transparent;
+    border: none;
+}
+
+
+/** LEFT **/
+
+h1 {
+    font-size: 70px;
+    width: 20vw;
+    margin-top: 80px;
+}
+
+#left p {
+    width: 30vw;
+    margin-top: 30px;
+}
+
+.button2 {
+    width: 6.5vw;
+    background-color: #342a80;
+    margin-top: 58px;
+    border: none;
+    transform: scale(1);
+    transition: transform 3000ms;
+}
+
+.button2 input {
+    color: #f1e8c0;
+    cursor: pointer;
+}
+
+.button2:hover {
+    background-color: transparent;
+    border: 2px solid black;
+    color: #000;
+    transform: scale(1.15);
+}
+
+.button2 input:hover {
+    color: #000;
+    cursor: pointer;
+}
+
+
+/** SECTION **/
+
+section {
+    margin-top: 60px;
+}
+
+#container2 {
+    width: 1040px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.book img {
+    width: 50px;
+}
+
+.block:nth-child(2)>.book img {
+    height: 48px;
+}
+
+.block p {
+    margin-top: 20px;
+}
